@@ -16,13 +16,13 @@ int main(void)
 
 	for (i = 48; i <= 56; i++)
 	{
-		for (j = 49; <= 57; j++)
+		for (j = 49;j <= 57; j++)
 		{
 			if (j > i)
 			{
 				putchar (i);
 				putchar (j);
-				if (i != 56 || m != 57)
+				if (i != 56 || j != 57)
 				{
 					putchar (44);
 					putchar (32);
