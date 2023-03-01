@@ -31,3 +31,4 @@ int main(void)
 	_putchar (x);
 	_putchar ('\n');
 	return (0);
+}
