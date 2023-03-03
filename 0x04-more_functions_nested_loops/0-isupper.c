@@ -5,6 +5,7 @@
  * _isupper - checks for upper case characters.
  * return 1 if c is uppercase else return 0.
  * @c: character argument.
+ * Return: Success (1).
  */
 
 int _isupper(int c)
@@ -20,5 +21,5 @@ int _isupper(int c)
 		return (0);
 	}
 
-	return (result);
+	return (resulti);
 }
