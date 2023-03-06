@@ -1,6 +1,7 @@
 #include "main.h"
 
-/** more_numbers - prints 10 times numbers
+/**
+ * more_numbers - prints 10 times numbers
  * followed by a new line.
  * _putchar used only three times in the code.
  * Return: Success (0).
