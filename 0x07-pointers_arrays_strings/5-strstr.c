@@ -10,9 +10,9 @@
  * else NULL if needle is not found.
  */
 
-char *_strstr(char * haystack, char *needle)
+char *_strstr(char *haystack, char *needle)
 {
-	for (;*haystack != '\0'; haystack++)
+	for (; *haystack != '\0'; haystack++)
 	{
 		char *j = haystack;
 		char *k = needle;
@@ -26,4 +26,4 @@ char *_strstr(char * haystack, char *needle)
 			return (haystack);
 	}
 	return (0);
-}	
+}
