@@ -5,6 +5,8 @@
  * main - prints the name of the program, followed by a newline.
  * when renamed, the program prints the new new name without having
  * to compile it again.
+ * @argc: numbers of arguments.
+ * @argv: array of arguments.
  *
  * Return: Success (0).
  */
