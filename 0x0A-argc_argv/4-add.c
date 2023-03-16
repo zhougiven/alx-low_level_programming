@@ -31,6 +31,8 @@ int verify_num(char *str)
  * main - prints sum of positive numbers, followed by a new line.
  * if no number is passed to the program, prints 0.
  * if one number contains symbols that are not digits, prints error.
+ * @argc: argument count.
+ * @argv: arrays of arguments.
  *
  * Return: Success(0).
  */
@@ -44,7 +46,7 @@ int main(int argc, char *argv[])
 	verify = 1;
 	while (verify < argc)
 	{
-		if(verify_num(argv[verify]))
+		if (verify_num(argv[verify]))
 		{
 			i = atoi(argv[verify]);
 			sum +=  i;
