@@ -9,21 +9,23 @@
  * if the program does not receive 2 arguments, it prints error and returns 1.
  * @argc: number of arguments.
  * @argv: array of arguments passed into the program.
- * @mul: multiplation arithmethic.
- *
+ * 
  * Return: Success (0).
  */
 
 int main(int argc, char **argv)
 {
-	int mul;
+	int i, j;
 
 	if (argc != 3)
 	{
 		printf("Error\n");
 		return (-1);
 	}
-	mul = atoi(argv[1]) * atoi(argv[2]);
+	i = atoi(argv[1]);
+	j = atoi(argv[2]);
+
+	mul(i, j);
 	printf("%d\n", mul);
 	return (0);
 }
