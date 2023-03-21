@@ -1,5 +1,15 @@
 #include <stdlib.h>
 
+/**
+ * alloc_grid - returns a pointer to a two dimensional array of integers.
+ * Each element of the grid should be initialised to 0.
+ * The function should return NULL on failure.
+ * If width or height is 0 or negative, return NULL.
+ * @height: height of the grid.
+ * @width: width of the grid.
+ * Return: Pointer (Success).
+ */
+
 int **alloc_grid(int width, int height)
 {
 	int i, j;
@@ -7,12 +17,12 @@ int **alloc_grid(int width, int height)
 
 	if (width <= 0 || height <= 0)
 	{
-		return NULL;
+		return (NULL);
 	}
 	grid = (int **)malloc(height * sizeof(int *));
 	if (grid == NULL)
 	{
-		return NULL;
+		return (NULL);
 	}
 	i = 0;
 	while (i < height)
@@ -27,7 +37,7 @@ int **alloc_grid(int width, int height)
 				j++;
 			}
 			free(grid);
-			return NULL;
+			return (NULL);
 		}
 		j = 0;
 		while (j < width)
@@ -37,5 +47,5 @@ int **alloc_grid(int width, int height)
 		}
 		i++;
 	}
-	return grid;
+	return (grid);
 }
