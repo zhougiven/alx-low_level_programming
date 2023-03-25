@@ -32,7 +32,7 @@ void print_dog(struct dog *d)
 	}
 	if (d->owner == NULL)
 	{
-		printf("Onwer: NULL\n");
+		printf("Onwer: (nil)\n");
 	}
 	else
 	{

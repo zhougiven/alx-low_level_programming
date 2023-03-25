@@ -13,6 +13,10 @@
 
 void init_dog(struct dog *d, char *name, float age, char *owner)
 {
+	if (d = NULL)
+	{
+		printf("OK\n");
+	}
 	d->name = (char *)malloc((sizeof(char)) * (strlen(name) + 1));
 	d->owner = (char *)malloc((sizeof(char)) * (strlen(owner) + 1));
 	strcpy(d->name, name);
